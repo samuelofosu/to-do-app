@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="greeting">Hi, User! Create your to-do list with Samie</h1>
+            <input type="text" id="userName" placeholder="Enter your name" />
+            <button onclick="setUserName()">Set Name</button>
+        </div>
+        <div class="todo-app">
+            <h2>To-Do App</h2>
+            <p>Keep It Up!</p>
+            <div class="progress">
+                <span id="progressText">0/0</span>
+            </div>
+            <input type="text" id="taskInput" placeholder="Write Your Task" />
+            <input type="time" id="taskTime" />
+            <button onclick="addTask()">+</button>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <!-- <div id="loader" class="loader"></div> -->
+    <script src="script.js"></script>
+</body>
+</html>
